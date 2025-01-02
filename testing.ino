@@ -6,7 +6,7 @@
 const char* ssid = "Race";
 const char* password = "air22884";
 
-const char* serverName = "https://krishay04.netlify.app/api/execute";
+const char* serverName = "https://krishay04.netlify.app/api/email";
 
 
 bool isInitialized = false;
@@ -66,7 +66,7 @@ void loop() {
     https.addHeader("Content-Type", "application/json");
 
   
-    String jsonData = "{\"key1\":\"value1\",\"key2\":\"value2\"}";
+    String jsonData = "{\"token\":\"messenger\",\"type\":\"double\"}";
 
     int httpResponseCode = https.POST(jsonData);
 
